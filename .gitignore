@@ -16,6 +16,7 @@ env/
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # Editor / IDE
 .vscode/
@@ -25,7 +26,6 @@ env/
 *.log
 
 # Local data and generated artifacts
-docs/
 data/raw/
 data/interim/
 data/processed/
