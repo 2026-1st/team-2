@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-26T16:01:10",
+  "run_id": "riot-scale-2600",
+  "purpose": "Versioned Riot surrender analysis notebooks",
+  "notebooks": [
+    "notebooks/versions/v01_data_validation_riot_scale_2600.ipynb",
+    "notebooks/versions/v02_eda_feature_interpretation_riot_scale_2600.ipynb",
+    "notebooks/versions/v03_modeling_threshold_riot_scale_2600.ipynb",
+    "notebooks/versions/v04_submission_report_riot_scale_2600.ipynb"
+  ],
+  "recommended_order": [
+    "v01_data_validation_riot_scale_2600.ipynb",
+    "v02_eda_feature_interpretation_riot_scale_2600.ipynb",
+    "v03_modeling_threshold_riot_scale_2600.ipynb",
+    "v04_submission_report_riot_scale_2600.ipynb"
+  ]
+}
