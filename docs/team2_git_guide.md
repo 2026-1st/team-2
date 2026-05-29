@@ -33,7 +33,7 @@
 | `fix/<설명>` | 버그 수정 | `fix/team-label-bug`, `fix/seed-split` |
 | `docs/<설명>` | 문서 작성·수정 | `docs/git-guide`, `docs/readme-runbook` |
 | `exp/<설명>` | 실험·모델 비교 | `exp/logistic-baseline`, `exp/rf-gb-compare` |
-| `data/<설명>` | 데이터 계약·샘플·검증 로직 | `data/validation-rules` |
+| `data/<설명>` | 분석 데이터 기준·샘플·검증 로직 | `data/validation-rules` |
 | `chore/<설명>` | 환경·설정·정리 | `chore/requirements-cleanup` |
 
 브랜치 이름은 영어 소문자와 하이픈을 권장합니다.
@@ -97,7 +97,7 @@ git push origin feature/15min-features
 | `fix` | 버그 수정 | `fix: 서렌 라벨 판정 조건 수정` |
 | `docs` | 문서 수정 | `docs: README 실행 방법 보강` |
 | `refactor` | 동작 변화 없는 구조 개선 | `refactor: Riot client 응답 파싱 분리` |
-| `data` | 데이터 계약·샘플·검증 관련 변경 | `data: team_features 스키마 검증 항목 추가` |
+| `data` | 분석 데이터 기준·샘플·검증 관련 변경 | `data: team_features 스키마 검증 항목 추가` |
 | `exp` | 실험·모델 비교 추가 | `exp: Logistic Regression baseline 추가` |
 | `chore` | 설정·환경·기타 정리 | `chore: requirements 정리` |
 
@@ -339,5 +339,5 @@ git pull origin main
 
 - 수업 공용 Git 가이드: `../.github/docs/Git_가이드.md`
 - 수업 프로젝트 안내: `../.github/docs/프로젝트_안내.md`
-- Team2 데이터 계약: `docs/data_contract.md`
+- Team2 분석 데이터 기준서: `docs/data_contract.md`
 - Team2 실행 안내: `README.md`
