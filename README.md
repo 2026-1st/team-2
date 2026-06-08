@@ -91,13 +91,3 @@ python -m nbconvert --execute --to notebook --inplace lab/*.ipynb
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
-
-## 7. 최종 보고서
-
-최종 제출 보고서는 다음 파일입니다.
-
-```text
-Report/Submission/Team2_report.md
-```
-
-개인별 작은 markdown summary나 실험 로그는 원격 저장소에 따로 올리지 않고, 최종 보고서와 `lab/` notebook 안에서 필요한 내용만 유지합니다.
