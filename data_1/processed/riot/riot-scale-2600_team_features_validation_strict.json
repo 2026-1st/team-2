@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "evidence": [
+        "match_id",
+        "team_id",
+        "feature_version",
+        "team_surrendered",
+        "queue_id",
+        "game_version",
+        "game_duration_sec",
+        "collected_at",
+        "gold_diff_15",
+        "kill_diff_15",
+        "tower_diff_15",
+        "dragon_diff_15",
+        "rift_herald_diff_15",
+        "cs_diff_15",
+        "avg_level_diff_15",
+        "first_blood",
+        "first_tower",
+        "ward_placed_diff_15",
+        "ward_kill_diff_15"
+      ],
+      "message": "All required columns are present",
+      "name": "required_columns",
+      "ok": true
+    },
+    {
+      "evidence": 5050,
+      "message": "Row count is sufficient",
+      "name": "row_count",
+      "ok": true
+    },
+    {
+      "evidence": [
+        "gold_diff_15",
+        "kill_diff_15",
+        "tower_diff_15",
+        "dragon_diff_15",
+        "rift_herald_diff_15",
+        "cs_diff_15",
+        "avg_level_diff_15",
+        "first_blood",
+        "first_tower",
+        "ward_placed_diff_15",
+        "ward_kill_diff_15"
+      ],
+      "message": "At least 10 feature columns present",
+      "name": "feature_count",
+      "ok": true
+    },
+    {
+      "evidence": null,
+      "message": "No forbidden identifier/key columns found",
+      "name": "privacy_columns",
+      "ok": true
+    },
+    {
+      "evidence": {
+        "positive_count": 870,
+        "values": [
+          "true",
+          "false"
+        ]
+      },
+      "message": "Target contains at least two classes",
+      "name": "target_classes",
+      "ok": true
+    },
+    {
+      "evidence": 2525,
+      "message": "At least 3 unique match groups present",
+      "name": "group_count",
+      "ok": true
+    },
+    {
+      "evidence": null,
+      "message": "Every match has exactly two team rows",
+      "name": "two_rows_per_match",
+      "ok": true
+    },
+    {
+      "evidence": null,
+      "message": "No match has more than one surrender-defeat team",
+      "name": "positive_labels_per_match",
+      "ok": true
+    },
+    {
+      "evidence": null,
+      "message": "All rows use queue_id=420",
+      "name": "queue_id",
+      "ok": true
+    },
+    {
+      "evidence": null,
+      "message": "All rows have game_duration_sec >= 900",
+      "name": "duration",
+      "ok": true
+    }
+  ],
+  "columns": [
+    "match_id",
+    "team_id",
+    "feature_version",
+    "team_surrendered",
+    "queue_id",
+    "game_version",
+    "game_duration_sec",
+    "collected_at",
+    "gold_diff_15",
+    "kill_diff_15",
+    "tower_diff_15",
+    "dragon_diff_15",
+    "rift_herald_diff_15",
+    "cs_diff_15",
+    "avg_level_diff_15",
+    "first_blood",
+    "first_tower",
+    "ward_placed_diff_15",
+    "ward_kill_diff_15"
+  ],
+  "created_at": "2026-05-26T06:57:34+00:00",
+  "input_csv": "/Users/gaeul/Documents/dev_doc/2026-1st/team-2/data/processed/riot/riot-scale-2600_team_features.csv",
+  "row_count": 5050,
+  "status": "complete"
+}
