@@ -1,0 +1,39 @@
+{
+  "columns": [
+    "match_id",
+    "team_id",
+    "feature_version",
+    "team_surrendered",
+    "queue_id",
+    "game_version",
+    "game_duration_sec",
+    "collected_at",
+    "gold_diff_15",
+    "kill_diff_15",
+    "tower_diff_15",
+    "dragon_diff_15",
+    "rift_herald_diff_15",
+    "cs_diff_15",
+    "avg_level_diff_15",
+    "first_blood",
+    "first_tower",
+    "ward_placed_diff_15",
+    "ward_kill_diff_15"
+  ],
+  "counts": {
+    "eligible_matches": 2525
+  },
+  "created_at": "2026-05-14T19:59:29+00:00",
+  "eligible_matches": 2525,
+  "exclusions": {
+    "game_duration_under_15min": 71,
+    "queue_id_0_not_420": 4
+  },
+  "output_csv": "/Users/gaeul/Documents/dev_doc/2026-1st/team-2/data/processed/riot/riot-scale-2600_team_features.csv",
+  "positive_rate": 0.172277,
+  "positive_team_surrendered_rows": 870,
+  "source_runs": [
+    "data/raw/riot/runs/riot-scale-2600"
+  ],
+  "team_rows": 5050
+}

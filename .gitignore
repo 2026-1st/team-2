@@ -1,5 +1,6 @@
 # macOS
 .DS_Store
+**/.DS_Store
 
 # Python
 __pycache__/
@@ -22,13 +23,49 @@ env/
 .vscode/
 .idea/
 
-# Logs
+# Logs and archives
 *.log
+*.zip
 
-# Local data and generated artifacts
-data/raw/
-data/interim/
-data/processed/
-models/
-outputs/
-reports/figures/
+# Large local/generated data from the source pipeline
+/data/raw/
+/data/interim/
+/data/processed/
+
+# Official submission data snapshots are intentionally commit candidates.
+# Keep data_1/, data_2/, and data_3/ visible to Git.
+
+# Local experiment workspace: personal markdown logs, figures, model binaries,
+# and small interim score tables are absorbed into lab/*.ipynb instead.
+/laboratory/
+
+# Generated runtime artifacts
+/models/
+/outputs/
+/reports/figures/
+
+# Legacy notebook workspace is not the official submission surface.
+# The curated, runnable notebooks live under lab/.
+/notebooks/
+
+# Keep only the final report from Report/.
+/Report/*
+!/Report/Submission/
+!/Report/Submission/Team2_report.md
+
+# Model binaries / serialized artifacts
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+
+# Local-only commit/PR handoff notes; not a submission artifact.
+/docs/bumjun_seungbeom_commit_pr_package/
+
+# Submission data uses processed/riot files. Verification JSON summaries stay local.
+/data_2/verification/
+/data_3/verification/
